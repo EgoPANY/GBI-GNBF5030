@@ -1,0 +1,24 @@
+# Sequencing and large derived data (not for GitHub)
+data/raw_fastq/
+data/reference/
+data/dryad/
+results/breseq/
+results/fastqc/
+logs/
+packs/
+
+# Archives and OS
+*.tar.gz
+*.zip
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Editor
+.vscode/
+.idea/

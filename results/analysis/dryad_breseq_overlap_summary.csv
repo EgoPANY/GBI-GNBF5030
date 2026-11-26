@@ -1,0 +1,7 @@
+clone,dryad_snv,breseq_snp,shared_positions,allele_match,allele_mismatch,dryad_only,breseq_only,recall_vs_dryad_pct
+2K-A,3,3,3,3,0,0,0,100.00
+10K-A,16,16,16,16,0,0,0,100.00
+20K-A,28,28,28,28,0,0,0,100.00
+27K-D,307,309,307,307,0,0,2,100.00
+40K-A,625,624,624,624,0,1,0,99.84
+40K-B,834,833,833,833,0,1,0,99.88

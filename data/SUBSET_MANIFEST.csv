@@ -1,0 +1,7 @@
+clone,strain_id,run_accession,library_layout,mutator_bg,rationale,download_status,local_path_glob
+2K-A,REL1164A,SRR030253,PAIRED,non-mutY,early evolved baseline,done,raw_fastq/2K-A/SRR030253_*.fastq.gz
+10K-A,REL4536A,SRR030255,PAIRED,non-mutY,mid evolution non-mutator,done,raw_fastq/10K-A/SRR030255_*.fastq.gz
+20K-A,REL8593A,SRR030257,PAIRED,non-mutY,late pre-mutator,done,raw_fastq/20K-A/SRR030257_*.fastq.gz
+27K-D,REL11395,ERR051725,SINGLE,mutT,mutT clone onset,done,raw_fastq/27K-D/ERR051725.fastq.gz
+40K-A,REL10938,SRR030258,PAIRED,mutT mutY-E,late mutY-E,done,raw_fastq/40K-A/SRR030258_*.fastq.gz
+40K-B,REL10939,ERR051717,SINGLE,mutT mutY-L,late mutY-L contrast,done,raw_fastq/40K-B/ERR051717.fastq.gz
