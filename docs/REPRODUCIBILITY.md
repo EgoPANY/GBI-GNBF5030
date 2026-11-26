@@ -34,6 +34,6 @@ conda activate ltee-breseq
 
 Committed CSVs under `results/analysis/` are snapshots from the author’s run; regenerate to verify.
 
-## Report
+## Documentation
 
-Manuscript: `docs/REPORT.md`. Figure style: `docs/REPORT_FIGURE_STYLE.md`.
+Pipeline summary: `docs/METHODS.md`. Figure files: `docs/FIGURES.md`.
