@@ -8,7 +8,7 @@ This repository provides **scripts**, **accession manifests**, **summary tables*
 
 | Path | Description |
 |------|-------------|
-| `docs/METHODS.md` | Abstract, keywords, methods, download table |
+| `docs/METHODS.md` | Abstract, keywords, methods, hardware, download table |
 | `docs/REPRODUCIBILITY.md` | End-to-end rerun steps |
 | `scripts/` | Download prep, breseq drivers, summarisation |
 | `data/*.csv` | Six-clone SRA manifest |

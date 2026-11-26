@@ -40,6 +40,21 @@ Consensus single-nucleotide variants were enumerated from each `output.gd` by co
 
 Published SNV positions and alternate alleles for the same six clones were taken from the Wielgoss et al. (2013) deposit on Dryad ([10.5061/dryad.hb3b5](https://doi.org/10.5061/dryad.hb3b5); landing page [datadryad dataset record](https://datadryad.org/stash/dataset/doi:10.5061/dryad.hb3b5)). The archive does not contain raw FASTQ; the variation bundle provides breseq-style GVF files used as the published SNV comparator. breseq SNP calls were matched to Dryad SNV entries by chromosomal position and alternate nucleotide. Per clone we report shared SNVs, Dryad-only and breseq-only SNPs, and recall (fraction of Dryad SNV positions recovered). Focal mutT/mutY lesions near positions 114034, 2,988,792, and 2,989,164 were inspected in breseq output but excluded from SNV overlap denominators when absent from GVF SNV rows.
 
+### Compute environment (hardware)
+
+Primary analyses were run on a **Linux** shared compute host (November 2025) with the following resources:
+
+| Resource | Specification | Used in this project |
+|----------|---------------|----------------------|
+| CPU | 90 logical processors (`nproc` = 90) | Yes: six concurrent `breseq` jobs, 15 worker threads per clone (`breseq -j 15`, ~90 threads total) |
+| System memory | ~850 GiB installed | Yes: sufficient for six parallel breseq runs |
+| GPU | 2 × NVIDIA H20 | **No**: breseq, Bowtie2, and FastQC in this workflow are CPU-only |
+| Storage | Network-attached workspace | FASTQ staging, breseq output trees, and summary CSVs |
+
+**FastQC** was run with `-t 2` per input file (low thread count; QC is lightweight compared with alignment). **Python 3** tabulation and plotting used a single process per script on the same host.
+
+Replication on a laptop or smaller VM is possible but wall-clock time for breseq will scale with available CPU cores; GPU is not required.
+
 ### Software environment and code availability
 
 Analyses used conda with breseq 0.40.2, Bowtie2 2.5.5, and FastQC 0.13.0 (Bioconda). Tabulation and overlap figures were produced with Python 3 scripts in this repository: https://github.com/EgoPANY/GBI-GNBF5030
